@@ -1,0 +1,27 @@
+inherit mate
+
+NAME="mate-themes-extras"
+VERSION=3.14.4
+RELEASE=1
+CATEGORY="MATE"
+SUMMARY="Additional GTK+ themes"
+DESCRIPTION="The mate-themes-extras package contains a collection of GTK2/3
+desktop themes for MATE. These themes can change the appearance of application
+widgets, window borders, etc."
+HOMEPAGE="https://github.com/NiceandGently/mate-themes-extras"
+SRC_URI="https://github.com/NiceandGently/mate-themes-extras/archive/v${VERSION}/mate-themes-extras-v${VERSION}.tar.gz"
+
+ARCH=noarch
+
+REQUIRES="gnome-themes-standard gtk2.0-engines-murrine gtk2.0-engines-smooth gtk3-engines-unico adwaita-icon-theme faience-icon-theme mate-icon-theme"
+
+CYGCONF_ARGS="
+	--enable-Blue-Submarine
+	--enable-DeLorean
+	--enable-DeLorean-Dark
+	--enable-GnomishBeige
+	--enable-Green-Submarine
+	--enable-Smoothly
+	--enable-Smoothly-Black
+"
+
